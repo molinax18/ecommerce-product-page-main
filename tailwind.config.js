@@ -8,7 +8,6 @@ export default {
     extend: {
       container: {
         center: true,
-        padding: '2rem'
       },
       fontFamily: {
         'kumbh-sans': ['Kumbh Sans', 'sans-serif']

@@ -1,10 +1,8 @@
-type Props = {
-  style?: string
-}
+import { IconProps } from '../../../types'
 
-export const MenuIcon: React.FC<Props> = ({ style }) => {
+export const MenuIcon: React.FC<IconProps> = ({ style, onClick }) => {
   return (
-    <span className={style}>
+    <span className={style} onClick={onClick}>
       <svg
         width='16'
         height='16'

@@ -1,8 +1,6 @@
-type Props = {
-  style?: string
-}
+import { IconProps } from '../../../types'
 
-export const LogoIcon: React.FC<Props> = ({ style }) => {
+export const LogoIcon: React.FC<IconProps> = ({ style }) => {
   return (
     <span className={style}>
       <svg

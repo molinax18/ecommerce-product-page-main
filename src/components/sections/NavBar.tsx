@@ -16,12 +16,16 @@ export const DesktopNavbar = () => {
   )
 }
 
-export const MobileNavbar = () => {
+type MobileNavbarProps = {
+  toggleMenu: () => void
+}
+
+export const MobileNavbar: React.FC<MobileNavbarProps> = ({ toggleMenu }) => {
   return (
-    <div className="absolute inset-0 bg-shadow">
-      <div className='absolute top-0 left-0 bottom-0 z-10 px-4 py-6 w-2/3 bg-white md:hidden'>
-        <CloseIcon />
-        <nav className="mt-12">
+    <div className='absolute inset-0 bg-shadow md:hidden'>
+      <div className='absolute top-0 left-0 bottom-0 z-10 px-4 py-6 w-2/3 bg-white'>
+        <CloseIcon onClick={toggleMenu} />
+        <nav className='mt-12'>
           <ul className='flex flex-col gap-y-4 text-very-dark-blue font-[800]'>
             {LIST_ITEMS.map((it, i) => (
               <li key={i}>

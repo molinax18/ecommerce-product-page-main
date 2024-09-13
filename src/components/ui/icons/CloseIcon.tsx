@@ -1,6 +1,8 @@
-export const CloseIcon = () => {
+import { IconProps } from '../../../types'
+
+export const CloseIcon: React.FC<IconProps> = ({ onClick }) => {
   return (
-    <span>
+    <span onClick={onClick}>
       <svg
         width='14'
         height='15'

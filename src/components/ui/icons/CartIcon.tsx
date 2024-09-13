@@ -1,4 +1,6 @@
-export const CartIcon = () => {
+import { IconProps } from '../../../types'
+
+export const CartIcon: React.FC<IconProps> = () => {
   return (
     <span>
       <svg
