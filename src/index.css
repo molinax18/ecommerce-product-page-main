@@ -9,3 +9,9 @@
     @apply font-kumbh-sans;
   }
 }
+
+@layer components {
+  .transition-d-200 {
+    @apply transition-all ease-out duration-200;
+  }
+}
