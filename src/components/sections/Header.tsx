@@ -1,4 +1,4 @@
-import { DesktopNavBar } from './NavBar'
+import { DesktopNavbar, MobileNavbar } from './Navbar'
 import { CartIcon } from '../ui/icons/CartIcon'
 import { LogoIcon } from '../ui/icons/LogoIcon'
 import { MenuIcon } from '../ui/icons/MenuIcon'
@@ -10,7 +10,8 @@ export const Header = () => {
       <div className='flex items-center gap-x-4 md:gap-x-6'>
         <MenuIcon style='md:hidden' />
         <LogoIcon style='-mt-1'/>
-        <DesktopNavBar />
+        <DesktopNavbar />
+        {/* <MobileNavbar /> */}
       </div>
       <div className='flex items-center gap-x-4'>
         <CartIcon />
