@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: '2rem'
+      },
       fontFamily: {
         'kumbh-sans': ['Kumbh Sans', 'sans-serif']
       },
@@ -16,7 +20,7 @@ export default {
         'dark grayish-blue': 'hsl(219, 9%, 45%)',
         'grayish-blue': 'hsl(220, 14%, 75%)',
         'light-grayish-blue': 'hsl(223, 64%, 98%)',
-        shadow: 'rgba(0, 0, 0, .75)',
+        shadow: 'rgba(0, 0, 0, .75)'
       },
     },
   },
