@@ -1,6 +1,10 @@
-export const MenuIcon = () => {
+type Props = {
+  style?: string
+}
+
+export const MenuIcon: React.FC<Props> = ({ style }) => {
   return (
-    <span>
+    <span className={style}>
       <svg
         width='16'
         height='16'
