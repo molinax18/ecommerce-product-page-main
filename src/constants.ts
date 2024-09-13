@@ -1,0 +1,1 @@
+export const LIST_ITEMS: string[] = ['Collections', 'Men', 'Women', 'About', 'Contact']

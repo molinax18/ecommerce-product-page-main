@@ -1,7 +1,11 @@
 import { Header } from './components/sections/Header'
 
 const App = () => {
-  return <Header />
+  return (
+    <div className='py-3'>
+      <Header />
+    </div>
+  )
 }
 
 export default App

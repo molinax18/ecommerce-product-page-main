@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      container: {
-        center: true,
-      },
       fontFamily: {
         'kumbh-sans': ['Kumbh Sans', 'sans-serif']
       },
