@@ -11,7 +11,7 @@ export const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <header className='flex justify-between items-center'>
+    <header className='flex justify-between items-center py-3 px-4'>
       <div className='flex items-center gap-x-4 md:gap-x-6'>
         {!isOpen && (
           <MenuIcon
