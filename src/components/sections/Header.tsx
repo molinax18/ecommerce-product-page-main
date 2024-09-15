@@ -27,7 +27,7 @@ export const Header = () => {
         <DesktopNavbar />
       </div>
       <div className='flex items-center gap-x-4'>
-        <CartIcon />
+        <CartIcon style='text-dark-grayish-blue'/>
         <img
           src={avatar}
           alt='A man with black glasses and long hair.'

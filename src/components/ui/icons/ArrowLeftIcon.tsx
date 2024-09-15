@@ -1,8 +1,11 @@
-import { IconProps } from "../../../types"
+import { IconProps } from '../../../types'
 
 export const ArrowLeftIcon: React.FC<IconProps> = ({ style, onClick }) => {
   return (
-    <span className={style} onClick={onClick}>
+    <span
+      className={style}
+      onClick={onClick}
+    >
       <svg
         width='13'
         height='18'
