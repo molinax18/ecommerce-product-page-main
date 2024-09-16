@@ -7,7 +7,7 @@ import secondProductThumbnail from '../public/images/image-product-2-thumbnail.j
 import thirdProductThumbnail from '../public/images/image-product-3-thumbnail.jpg'
 import fourthProductThumbnail from '../public/images/image-product-4-thumbnail.jpg'
 
-type Product = {
+export type Product = {
   product: string,
   thumbnail: string
 }
