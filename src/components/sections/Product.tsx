@@ -6,9 +6,9 @@ export const Product = () => {
   const [mainImage, setMainImage] = useState(0)
 
   return (
-    <section className='w-full md:max-w-sm'>
+    <article className='w-full md:max-w-sm'>
       <Carrousell />
-      <div className='hidden md:grid grid-cols-4 gap-4'>
+      <section className='hidden md:grid grid-cols-4 gap-4'>
         <img
           src={PRODUCTS[mainImage].product}
           alt='Shoe image'
@@ -24,7 +24,7 @@ export const Product = () => {
             />
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </article>
   )
 }

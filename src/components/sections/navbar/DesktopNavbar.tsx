@@ -2,7 +2,7 @@ import { LIST_ITEMS } from '../../../constants'
 
 export const DesktopNavbar = () => {
   const beforeStyles =
-    'relative hover:before:absolute before:top-14 before:bg-orange before:w-full before:h-1 before:transition-d-200 before:scale-x-0 hover:before:scale-x-100'
+    'relative hover:before:absolute before:top-12 before:bg-orange before:w-full before:h-1 before:transition-d-200 before:scale-x-0 hover:before:scale-x-100'
   
     return (
     <nav className='hidden md:block'>

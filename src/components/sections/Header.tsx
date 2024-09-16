@@ -26,7 +26,7 @@ export const Header = () => {
         <LogoIcon style='-mt-1' />
         <DesktopNavbar />
       </div>
-      <div className='flex items-center gap-x-4'>
+      <div className='flex items-center gap-x-6'>
         <CartIcon style='text-dark-grayish-blue'/>
         <img
           src={avatar}
