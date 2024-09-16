@@ -4,7 +4,7 @@ import { CartIcon } from "../ui/icons/CartIcon"
 
 export const Details = () => {
   return (
-    <section className='flex flex-col gap-y-6 py-3 px-4 text-dark-grayish-blue'>
+    <section className='flex flex-col gap-y-6 py-3 px-4 text-dark-grayish-blue w-full md:max-w-lg'>
       <header>
         <span className='uppercase tracking-widest text-xs font-bold'>
           Sneaker company

@@ -7,13 +7,28 @@ import secondProductThumbnail from '../public/images/image-product-2-thumbnail.j
 import thirdProductThumbnail from '../public/images/image-product-3-thumbnail.jpg'
 import fourthProductThumbnail from '../public/images/image-product-4-thumbnail.jpg'
 
-type Products = {
-  default: string[],
-  thumbnail: string[]
+type Product = {
+  product: string,
+  thumbnail: string
 }
 
 export const LIST_ITEMS: string[] = ['Collections', 'Men', 'Women', 'About', 'Contact']
-export const PRODUCTS: Products = {
-  default: [firstProduct, secondProduct, thirdProduct, fourthProduct],
-  thumbnail: [firstProductThumbnail, secondProductThumbnail, thirdProductThumbnail, fourthProductThumbnail]
-}
+
+export const PRODUCTS: Product[] = [
+  {
+    product: firstProduct,
+    thumbnail: firstProductThumbnail
+  },
+  {
+    product: secondProduct,
+    thumbnail: secondProductThumbnail
+  },
+  {
+    product: thirdProduct,
+    thumbnail: thirdProductThumbnail
+  },
+  {
+    product: fourthProduct,
+    thumbnail: fourthProductThumbnail
+  }
+]
