@@ -1,8 +1,11 @@
 import { IconProps } from '../../../types'
 
-export const CartIcon: React.FC<IconProps> = ({ style }) => {
+export const CartIcon: React.FC<IconProps> = ({ style, onClick }) => {
   return (
-    <span className={style}>
+    <span
+      className={style}
+      onClick={onClick}
+    >
       <svg
         width='22'
         height='20'

@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 type MobileNavbarProps = {
   toggleMenu: () => void
-  isOpen: boolean
+  showMenu: boolean
 }
 
 export const MobileNavbar: React.FC<MobileNavbarProps> = ({
   toggleMenu,
-  isOpen
+  showMenu
 }) => {
   return (
     <AnimatePresence>
-      {isOpen && (
+      {showMenu && (
         <motion.div
           initial={{ opacity: 0 }}
           exit={{ opacity: 0 }}
