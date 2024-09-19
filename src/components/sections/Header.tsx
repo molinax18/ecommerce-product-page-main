@@ -31,10 +31,10 @@ export const Header = () => {
       </div>
       <div className='flex items-center gap-x-6'>
         <CartIcon
-          style='relative text-dark-grayish-blue hover-icons cursor-pointer'
+          style='text-dark-grayish-blue hover-icons cursor-pointer'
           onClick={toggleCart}
         />
-        {showCart && <Cart style='absolute top-20 left-4 right-4 z-10' />}
+        {showCart && <Cart style='absolute top-20 left-4 right-4 z-10 md:left-auto' />}
         <img
           src={avatar}
           alt='A man with black glasses and long hair.'

@@ -11,7 +11,7 @@ export const CardContainer: React.FC<Props> = ({ style, children }) => {
       <motion.div
         initial={{ opacity: .2 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.2 }}
         className={`bg-white rounded-md drop-shadow-2xl ${style}`}
         children={children}
       />
