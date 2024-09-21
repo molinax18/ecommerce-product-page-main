@@ -10,17 +10,12 @@ export const cartReducer = (
   switch (action.type) {
     case 'ADD_CART':
       return addCartItem(state, action.payload)
-
-    case 'REMOVE_CART':
-      return removeCartItem(state, action.payload)
-
-    case 'DELETE_CART':
-      return deleteCartItem(state, action.payload)
-
-    case 'RESET_CART':
-      return []
-
+      
     default:
       return state
   }
+}
+
+const addCartItem = (cart: CartProduct[], item: CartProduct) => {
+  return [...cart, item]
 }

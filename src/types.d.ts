@@ -7,5 +7,5 @@ export type CartProduct = {
   image: string
   name: string
   price: number
-  
+  amount: number
 }

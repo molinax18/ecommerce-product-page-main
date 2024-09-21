@@ -1,8 +1,14 @@
-import { Button } from "../ui/Button"
-import { Counter } from "../ui/Counter"
-import { CartIcon } from "../ui/icons/CartIcon"
+import { useState } from 'react'
+import { PRODUCTS } from '../../constants'
+import { CartContext, useCartContext } from '../../context/CartContext'
+import { Button } from '../ui/Button'
+import { Counter } from '../ui/Counter'
+import { CartIcon } from '../ui/icons/CartIcon'
 
 export const Details = () => {
+  const [amount, setAmount] = useState(0)
+  const { dispatch } = useCartContext() as CartContext
+
   return (
     <article className='flex flex-col gap-y-6 py-3 px-4 text-dark-grayish-blue w-full max-w-lg mx-auto'>
       <header>
@@ -20,14 +26,33 @@ export const Details = () => {
       </p>
       <div className='flex justify-between items-baseline font-semibold md:flex-col md:gap-y-2'>
         <div className='flex gap-x-6 items-center'>
-          <strong className='text-3xl text-very-dark-blue font-[700]'>$125.00</strong>
-          <span className='px-2 bg-very-dark-blue rounded-md text-white'>50%</span>
+          <strong className='text-3xl text-very-dark-blue font-[700]'>
+            $125.00
+          </strong>
+          <span className='px-2 bg-very-dark-blue rounded-md text-white'>
+            50%
+          </span>
         </div>
         <span className='line-through'>$250.00</span>
       </div>
       <footer className='flex flex-col gap-4 md:flex-row'>
-        <Counter style='md:flex-initial md:w-2/5' />
-        <Button style='flex justify-center md:flex-1'>
+        <Counter
+          style='md:flex-initial md:w-2/5'
+          amount={amount}
+          setAmount={setAmount}
+        />
+        <Button
+          style='flex justify-center md:flex-1'
+          onClick={() => dispatch({
+            type: 'ADD_CART',
+            payload: {
+              image: PRODUCTS[0].thumbnail,
+              name: 'Fall Limited Edition Sneakers',
+              price: 125,
+              amount
+            }
+          })}
+        >
           <span className='inline-flex gap-x-4 items-center font-bold'>
             <CartIcon style='text-very-dark-blue -mt-1' />
             Add to cart
