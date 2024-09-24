@@ -11,6 +11,9 @@ export const cartReducer = (
     case 'ADD_CART':
       return addCartItem(state, action.payload)
 
+    case 'DELETE_CART':
+      return deleteCartItem(state, action.payload)
+
     default:
       return state
   }
@@ -28,4 +31,9 @@ const addCartItem = (cart: CartProduct[], item: CartProduct) => {
   }
 
   return [...cart, item]
+}
+
+
+const deleteCartItem = (cart: CartProduct[], name: string) => {
+  return cart.filter(el => el.name !== name)
 }
