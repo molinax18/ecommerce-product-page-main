@@ -38,14 +38,14 @@ export const Header = () => {
       </div>
       <div className='flex items-center gap-x-6'>
         <CartIcon
-          style='relative text-dark-grayish-blue hover-icons cursor-pointer'
+          style='text-dark-grayish-blue hover-icons cursor-pointer'
           onClick={() => {
             toggleCart()
             setAmountCart(0)
           }}
         />
         {amountCart > 0 && (
-          <span className='absolute bottom-8 md:bottom-10 ml-3 px-[6px] bg-orange rounded-full text-white text-xs'>
+          <span className='absolute bottom-5 ml-3 px-[6px] bg-orange rounded-full text-white text-xs'>
             {state.length}
           </span>
         )}
