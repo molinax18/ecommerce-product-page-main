@@ -14,7 +14,7 @@ export const Header = () => {
   const toggleCart = () => setShowCart(!showCart)
 
   return (
-    <header className='flex justify-between items-center py-3 px-4 md:py-5'>
+    <header className='relative flex justify-between items-center py-3 px-4 md:py-5'>
       <div className='flex items-center gap-x-4 md:gap-x-6'>
         {!showMenu && (
           <MenuIcon

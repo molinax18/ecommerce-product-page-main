@@ -43,15 +43,19 @@ export const Details = () => {
         />
         <Button
           style='flex justify-center md:flex-1'
-          onClick={() => dispatch({
-            type: 'ADD_CART',
-            payload: {
-              image: PRODUCTS[0].thumbnail,
-              name: 'Fall Limited Edition Sneakers',
-              price: 125,
-              amount
-            }
-          })}
+          onClick={() => {
+            dispatch({
+              type: 'ADD_CART',
+              payload: {
+                image: PRODUCTS[0].thumbnail,
+                name: 'Fall Limited Edition Sneakers',
+                price: 125,
+                amount
+              }
+            })
+            setAmount(0)
+          }}
+          disabled={amount === 0}
         >
           <span className='inline-flex gap-x-4 items-center font-bold'>
             <CartIcon style='text-very-dark-blue -mt-1' />
