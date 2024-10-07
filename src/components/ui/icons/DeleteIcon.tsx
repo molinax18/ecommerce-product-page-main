@@ -17,7 +17,7 @@ export const DeleteIcon: React.FC<IconProps> = ({ style, onClick }) => {
       </defs>
       <use
         fill='currentColor'
-        fill-rule='nonzero'
+        fillRule='nonzero'
         href='#delete'
       />
     </svg>
