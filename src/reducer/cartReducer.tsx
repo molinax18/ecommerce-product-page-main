@@ -27,6 +27,8 @@ const addCartItem = (cart: CartProduct[], item: CartProduct) => {
       if (el.name === item.name) {
         return { ...el, amount: el.amount + item.amount };
       }
+
+      return el
     })  
   }
 
